@@ -129,12 +129,6 @@ hash (register const char *str, register unsigned int len)
   return hval;
 }
 
-#ifdef __GNUC__
-__inline
-#ifdef __GNUC_STDC_INLINE__
-__attribute__ ((__gnu_inline__))
-#endif
-#endif
 const char *
 hoedown_find_block_tag (register const char *str, register unsigned int len)
 {
